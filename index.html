@@ -197,7 +197,6 @@
           <ol class="timeline-list">
             <li class="timeline-item">
               <h4 class="h4 timeline-item-title">University of California, Santa Cruz</h4>
-              <span>2021 — Expected March 2025</span>
               <p class="timeline-text">
                 Bachelor of Science in Computer Science<br>
                 GPA: 3.56 / 4.0<br>
@@ -462,22 +461,31 @@
         </section>
 
         <section class="contact-form">
-          <h3 class="h3 form-title">Contact Form</h3>
+  <h3 class="h3 form-title">Contact Form</h3>
 
-          <form action="#" class="form" data-form>
-            <div class="input-wrapper">
-              <input type="text" name="fullname" class="form-input" placeholder="Full name" required data-form-input>
-              <input type="email" name="email" class="form-input" placeholder="Email address" required data-form-input>
-            </div>
+  <form action="https://formsubmit.co/evangelosneobarberis@gmail.com" method="POST" class="form" data-form>
+    <!-- Honeypot -->
+    <input type="text" name="_honey" style="display:none">
+    
+    <!-- Disable Captcha -->
+    <input type="hidden" name="_captcha" value="false">
+    
+    <!-- Success Page -->
+    <input type="hidden" name="_next" value="https://evangelosbarberis.github.io/success.html">
 
-            <textarea name="message" class="form-input" placeholder="Your Message" required data-form-input></textarea>
+    <div class="input-wrapper">
+      <input type="text" name="name" class="form-input" placeholder="Full name" required data-form-input>
+      <input type="email" name="email" class="form-input" placeholder="Email address" required data-form-input>
+    </div>
 
-            <button class="form-btn" type="submit" disabled data-form-btn>
-              <ion-icon name="paper-plane"></ion-icon>
-              <span>Send Message</span>
-            </button>
-          </form>
-        </section>
+    <textarea name="message" class="form-input" placeholder="Your Message" required data-form-input></textarea>
+
+    <button class="form-btn" type="submit">
+      <ion-icon name="paper-plane"></ion-icon>
+      <span>Send Message</span>
+    </button>
+  </form>
+</section>
       </article>
     </div>
   </main>
